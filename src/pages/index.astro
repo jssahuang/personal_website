@@ -1,11 +1,67 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+	<div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-6 shadow-lg">
+		<img
+  src="/profile.JPEG"
+  class="scale-[4] object-[75%_30%]"
+  alt="Zoomed headshot"
+  loading="lazy"
+/>
+
+		</div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Jessica 👋</h1>
+    <p class="text-lg max-w-xl text-gray-600 dark:text-gray-300">
+      I'm a full-stack software engineer passionate about crafting meaningful applications that improve lives through clean, intuitive design.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center">
+	  
+
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700 dark:text-gray-300">
+      I'm a recent graduate from USC, where I pursued the Progressive Degree Program to earn both my bachelor's and master's in Computer Science. I'm currently working on projects that identify users's needs and blend thoughtful design with practical backend systems. My favorite tools include TypeScript, Astro, React, Node.js, Python, Java, and C++. I care deeply about maintaining clean codebases, optimizing application performance, and prioritizing user experience.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="border rounded-xl p-6 shadow-sm bg-white dark:bg-gray-800">
+        <h3 class="text-xl font-semibold mb-2">Email Manager Tool</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">
+          A full-stack web application that provides additional analytics and tools to connect to and manager your Gmail account. 
+        </p>
+        <a href="#" class="text-blue-600 dark:text-blue-400 underline">View Project →</a>
+      </div>
+
+      <div class="border rounded-xl p-6 shadow-sm bg-white dark:bg-gray-800">
+        <h3 class="text-xl font-semibold mb-2">Shopify Dashboard</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">
+          A full-stack dashboard to manage Shopify products and inventory. React frontend, Node.js/GraphQL backend.
+        </p>
+        <a href="#" class="text-blue-600 dark:text-blue-400 underline">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Let's get in touch!</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+      
+    </p>
+    <p class="text-lg">
+      📧 <a href="mailto:your.email@example.com" class="underline text-blue-600 dark:text-blue-400">jssa.huang@gmail.com</a><br />
+      💼 <a href="https://linkedin.com/in/jssahuang" target="_blank" class="underline text-blue-600 dark:text-blue-400">LinkedIn</a>
+    </p>
+  </section>
 </Layout>
